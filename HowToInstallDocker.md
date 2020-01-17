@@ -1,6 +1,5 @@
 # How to Install Docker
-- If you use Docker with kubernetes, please refer to [kubernetes web site](
-https://kubernetes.io/docs/setup/production-environment/container-runtimes/.)
+- If you use Docker with kubernetes, please refer to [kubernetes web site](https://kubernetes.io/docs/setup/production-environment/container-runtimes/.)
 
 ## Index
 - [Evaluation Environment](#Evaluation-Environment)
