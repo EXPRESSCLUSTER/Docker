@@ -1,4 +1,7 @@
 # How to Install Docker
+- If you use Docker with kubernetes, please refer to [kubernetes web site](
+https://kubernetes.io/docs/setup/production-environment/container-runtimes/.)
+
 ## Index
 - [Evaluation Environment](#Evaluation-Environment)
 - [Install Docker on CentOS](#Install-Docker-on-CentOS)
