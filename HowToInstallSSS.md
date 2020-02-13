@@ -39,7 +39,7 @@
 1. Copy expressclssss-4.1.1-1.amd64.deb file to package directory.
 1. Move to the directory contains Dockerfile and run the following command.
    ```sh
-   $ sudo docker build --build-arg http_proxy=<proxy server>:<port number> -t <container image name (e.g. sss4mariadb:4.1.1-1.)> .
+   $ sudo docker build --build-arg http_proxy=<proxy server>:<port number> -t <container image name (e.g. sss4mariadb:4.1.1-1.1)> .
    ```
 1. Check if the container image exists.
    ```sh
