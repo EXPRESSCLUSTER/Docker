@@ -45,7 +45,7 @@
    ```sh
    $ sudo docker images
    REPOSITORY                           TAG                 IMAGE ID            CREATED             SIZE
-   sss4postgres                         4.1.2-1.1           f7a9ef43da73        2 minutes ago       260MB
+   sss4postgres                         4.1.1-1.1           f7a9ef43da73        2 minutes ago       260MB
    sss4mariadb                          4.1.1-1.1           1013ca060610        44 minutes ago      313MB
    ```
 
