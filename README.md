@@ -8,4 +8,4 @@
 - Refer to [How to Install EXPRESSCLUSTER X SingleServerSafe on Container](https://github.com/EXPRESSCLUSTER/Docker/blob/master/HowToInstallSSS.md).
 
 ## How to Install Witness Server
--Refer to [How to Install Witness Server](HowToInstallWitnessServer.md).
+- Refer to [How to Install Witness Server](HowToInstallWitnessServer.md).
