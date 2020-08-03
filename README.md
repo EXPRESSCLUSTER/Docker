@@ -2,7 +2,10 @@
 - The purpose of this project to open knowledge for Docker and EXPRESSCLUSTER.
 
 ## How to Install Docker
-- Please refer to [How to Install Docker](https://github.com/EXPRESSCLUSTER/Docker/blob/master/HowToInstallDocker.md).
+- Refer to [How to Install Docker](https://github.com/EXPRESSCLUSTER/Docker/blob/master/HowToInstallDocker.md).
 
 ## How to Install EXPRESSCLUSTER X SingleServerSafe on Container
-- Please refer to [How to Install EXPRESSCLUSTER X SingleServerSafe on Container](https://github.com/EXPRESSCLUSTER/Docker/blob/master/HowToInstallSSS.md).
+- Refer to [How to Install EXPRESSCLUSTER X SingleServerSafe on Container](https://github.com/EXPRESSCLUSTER/Docker/blob/master/HowToInstallSSS.md).
+
+## How to Install Witness Server
+-Refer to [How to Install Witness Server](HowToInstallWitnessServer.md).
