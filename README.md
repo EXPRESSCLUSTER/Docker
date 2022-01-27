@@ -9,3 +9,6 @@
 
 ## How to Install Witness Server
 - Refer to [How to Install Witness Server](HowToInstallWitnessServer.md).
+
+## Create a Cluster with EXPRRESSCLUSTER
+- Refer to [Create a Cluster with EXPRRESSCLUSTER](Create_a_Cluster_with_EXPRRESSCLUSTER.md).
