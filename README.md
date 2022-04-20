@@ -6,7 +6,7 @@
 
 ## Create Cluster with EXPRESSCLUSTER
 - [English](doc/Create_a_Cluster_with_EXPRRESSCLUSTER.md)
-- [Japanse](doc/CreateCluster_jp.md)
+- [Japanese](doc/CreateCluster_jp.md)
 
 ## Install EXPRESSCLUSTER X SingleServerSafe on Container
 - Refer to [How to Install EXPRESSCLUSTER X SingleServerSafe on Container](doc/HowToInstallSSS.md).
