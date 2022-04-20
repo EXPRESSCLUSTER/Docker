@@ -16,25 +16,24 @@
    # vi /etc/yum.conf
      :
    proxy=http://<your proxy server>:<port number>
-   sslverify=false
    ```
 1. Check update and install.
    ```bash
-   # yum check-update
-   # yum -y update
+   yum check-update
+   yum -y update
    ```
 1. Install Docker.
    ```bash
-   # yum -y install docker
+   yum -y install docker
    ```
-1. Copy docker.service file.
+1. Create the following directory and file.
    ```bash
-   # cp /usr/lib/systemd/system/docker.service /etc/systemd/system
+   mkdir /usr/lib/systemd/system/docker.service
+   touch /usr/lib/systemd/system/docker.service/http-proxy.conf
    ```
-1. Add proxy server to docekr.service file if you need.
-   ```bash
-   # vi /etc/systemd/system/docker.service
-    :
+1. Edit http-proxy.conf as below.
+   ```
+   [Service]
    Environment="HTTP_PROXY=http://<your proxy server>:<port number>"
    Environment="HTTPS_PROXY=http://<your proxy server>:<port number>"
    ```
@@ -42,55 +41,48 @@
    ```
    /usr/share/pki/ca-trust-source/anchors
    ```
-1. Enable and start Docker.
-   ```bash
-   # systemctl enable docker
-   # systemctl start docker
-   ```
 1. Restart Docker.
    ```bash
-   # systemctl daemon-reload
-   # systemctl restart docker
+   systemctl daemon-reload
+   systemctl restart docker
+   ```
+1. Enable and start Docker.
+   ```bash
+   systemctl enable docker
    ```
 
 ## Install Docker on Ubuntu
-1. If your environment behind a proxy server, edit apt.conf.
-   ```bash
-   # vi /etc/atp/apt.conf
-     :
-   Acquire::https::Verify-Peer "false";
-   Acquire::https::Verify-Host "false";
+1. If your environment behind a proxy server, edit /etc/atp/apt.conf as below.
+   ```
    Acquire::http::proxy "http://<your proxy server>:<port number>";
    Acquire::https::proxy "http://<your proxy server>:<port number>";
    ```
 1. Check update and install.
    ```bash
-   # apt-get update
-   # apt-get upgrade
+   apt-get update
+   apt-get upgrade
    ```
 1. Install Docker.
    ```bash
-   # apt-get install docker.io
+   apt-get install docker.io
    ```
 1. Make directory and create http-proxy.conf file.
    ```bash
-   # mkdir -p /etc/systemd/system/docker.service.d
-   # vi /etc/systemd/system/docker.service.d/http-proxy.conf
+   mkdir -p /etc/systemd/system/docker.service.d
+   vi /etc/systemd/system/docker.service.d/http-proxy.conf
    ```
 1. Add the following lines to http-proxy.conf.
    ```
-   # http-proxy.conf
    [Service]
    Environment="HTTP_PROXY=http://<your proxy server>:<port number>"
    Environment="HTTPS_PROXY=http://<your proxy server>:<port number>"
    ```
-1. Enable and start Docker.
-   ```bash
-   # systemctl enable docker
-   # systemctl start docker
-   ```
 1. Restart Docker.
    ```bash
-   # systemctl daemon-reload
-   # systemctl restart docker
+   systemctl daemon-reload
+   systemctl restart docker
+   ```
+1. Enable and start Docker.
+   ```bash
+   systemctl enable docker
    ```
