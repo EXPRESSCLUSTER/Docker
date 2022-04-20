@@ -61,7 +61,7 @@
    ```
 1. Run the following command on node2 to create MariaDB container.
    ```sh
-   docker create --name mariadb1 -v /mnt/md1:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=watch -p 3306:3306 -d mariadb:latest
+   docker create --name mariadb1 -v /mnt/md1:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=watch -p 3306:3306 mariadb:latest
    ```
 1. Run the following command on node1 to stop the container.
    ```sh
