@@ -94,7 +94,7 @@
    ```
 1. node2 で以下のコマンドを実行してください。
    ```sh
-   docker create --name mariadb1 -v /mnt/md1:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=watch -p 3306:3306 -d mariadb:latest
+   docker create --name mariadb1 -v /mnt/md1:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=watch -p 3306:3306 mariadb:latest
    ```
    - node1 で実行したコマンドと異なり、docker create を使います。
 1. CLUSTERPRO の Cluster WebUI を起動し、exec リソースを追加してください。また、start.sh, stop.sh を以下のように設定してください。
