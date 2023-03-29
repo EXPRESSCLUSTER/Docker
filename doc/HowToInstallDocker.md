@@ -13,13 +13,15 @@
 ## Install Docker on CentOS
 1. If your environment behind a proxy server, edit yum.conf.
    ```bash
-   # vi /etc/yum.conf
+   # vim /etc/yum.conf
      :
    proxy=http://<your proxy server>:<port number>
    ```
 1. Check update and install.
    ```bash
    yum check-update
+   ```
+   ```bash
    yum -y update
    ```
 1. Install Docker.
@@ -29,7 +31,9 @@
 1. Create the following directory and file.
    ```bash
    mkdir /usr/lib/systemd/system/docker.service
-   touch /usr/lib/systemd/system/docker.service/http-proxy.conf
+   ```
+   ```bash
+   vim /usr/lib/systemd/system/docker.service/http-proxy.conf
    ```
 1. Edit http-proxy.conf as below.
    ```
@@ -44,6 +48,8 @@
 1. Restart Docker.
    ```bash
    systemctl daemon-reload
+   ```
+   ```bash
    systemctl restart docker
    ```
 1. Enable and start Docker.
@@ -59,17 +65,21 @@
    ```
 1. Check update and install.
    ```bash
-   apt-get update
-   apt-get upgrade
+   sudo apt-get update
+   ```
+   ```bash
+   sudo apt-get upgrade
    ```
 1. Install Docker.
    ```bash
-   apt-get install docker.io
+   sudo apt-get install docker.io
    ```
 1. Make directory and create http-proxy.conf file.
    ```bash
-   mkdir -p /etc/systemd/system/docker.service.d
-   vi /etc/systemd/system/docker.service.d/http-proxy.conf
+   sudo mkdir -p /etc/systemd/system/docker.service.d
+   ```
+   ```bash
+   sudo vim /etc/systemd/system/docker.service.d/http-proxy.conf
    ```
 1. Add the following lines to http-proxy.conf.
    ```
@@ -79,10 +89,12 @@
    ```
 1. Restart Docker.
    ```bash
-   systemctl daemon-reload
-   systemctl restart docker
+   sudo systemctl daemon-reload
+   ```
+   ```bash
+   sudo systemctl restart docker
    ```
 1. Enable and start Docker.
    ```bash
-   systemctl enable docker
+   sudo systemctl enable docker
    ```
