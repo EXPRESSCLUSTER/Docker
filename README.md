@@ -5,8 +5,11 @@
 - Refer to [How to Install Docker](doc/HowToInstallDocker.md).
 
 ## Create Cluster with EXPRESSCLUSTER
+### CentOS
 - [English](doc/Create_a_Cluster_with_EXPRRESSCLUSTER.md)
 - [Japanese](doc/CreateCluster_jp.md)
+### Ubuntu Server
+- [MariaDB](doc/MariaDBCluster_Ubuntu.md)
 
 ## Install EXPRESSCLUSTER X SingleServerSafe on Container
 - Refer to [How to Install EXPRESSCLUSTER X SingleServerSafe on Container](doc/HowToInstallSSS.md).
