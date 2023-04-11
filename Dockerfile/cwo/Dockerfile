@@ -10,10 +10,10 @@ COPY cluster-webui-sss-lin-${version}.tgz .
 COPY cluster-webui-sss-win-${version}.tgz .
 COPY cluster-webui-win-${version}.tgz .
 
-RUN npm install --no-save cluster-webui-lin-${version}.tgz
-RUN npm install --no-save cluster-webui-sss-lin-${version}.tgz
-RUN npm install --no-save cluster-webui-sss-win-${version}.tgz
-RUN npm install --no-save cluster-webui-win-${version}.tgz
+RUN npm install cluster-webui-lin-${version}.tgz
+RUN npm install cluster-webui-sss-lin-${version}.tgz
+RUN npm install cluster-webui-sss-win-${version}.tgz
+RUN npm install cluster-webui-win-${version}.tgz
 
 EXPOSE 29003
 CMD ["/bin/bash","-c","cd /opt/cwo && /usr/local/bin/npx cluster-webui-win"]
