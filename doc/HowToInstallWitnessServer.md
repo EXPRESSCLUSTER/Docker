@@ -10,6 +10,22 @@
    cd clpwitnessd
    ```
 1. Copy clpwitness file (e.g., clpwitnessd-5.1.0.tgz) from EXPRESSCLUSTER CD image to the above direcotry.
+1. Expand the archive file.
+   ```sh
+   tar xzvf clpwitnessd-5.1.0.tgz
+   ```
+1. Edit package/clpwitnessd.conf.js as below.
+   ```js
+   module.exports = {
+           http: {
+                   enable: true,
+                   port: 8080,   
+   (snip)
+   ```
+1. Create tgz file as below.
+   ```sh
+   tar czvf clpwitnessd-5.1.0.tgz package/
+   ```
 1. Copy [Dockerfile](../Dockerfile/clpwitnessd/Dockerfile) to the above directory.
 1. Run the following command.
    ```sh
